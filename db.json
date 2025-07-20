@@ -1,0 +1,12 @@
+{
+    "goals": [
+        {
+            "id": 1,
+            "name": "Emergencies Fund",
+            "targetAmount": 1000,
+            "savedAmount": 200,
+            "category": "Savings",
+            "deadline": "2025-12-31"
+        }
+    ]
+}
