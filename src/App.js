@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import GoalForm from "./components/GoalForm";
+import GoalList from "./components/GoalList";
+import DepositForm from "./components/DepositForm";
+import Overview from "./components/Overview";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  const [ goals, setGoals ] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:3001/goals')
+    .then((res) => res.json())
+    .then(setGoals);
+  }, []);
+
+  return(
+    <div>
+      <h1>Smart Goal Planner</h1>
+      <GoalForm setGoals={setGoals}/>
+      <DepositForm goals={goals} setGoals={setGoals}/>
+      <Overview goals={goals}/>
+      <GoalList goals={goals} setGoals={setGoals}/>
     </div>
   );
 }
