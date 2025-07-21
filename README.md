@@ -48,6 +48,10 @@ the live site allows:
 
  -Repository:[Smart-goal-planner](https://d0nn-opsbyte.github.io/smart-goal-planner/)
 
+ -vercel:[Smart-goal-planner](smart-goal-planner-qg3cvcdd6-d0nn-opsbytes-projects.vercel.app)
+
+ -backend server:[](https://json-server-afv4.onrender.com)
+
  
 
  ## Contributions

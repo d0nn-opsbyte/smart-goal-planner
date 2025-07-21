@@ -20,7 +20,7 @@ function GoalForm({ setGoals }) {
       targetAmount: Number(formData.targetAmount),
     };
 
-    fetch('http://localhost:3001/goals', {
+    fetch('https://json-server-afv4.onrender.com', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(newGoal),
