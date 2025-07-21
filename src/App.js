@@ -8,7 +8,7 @@ function App(){
   const [ goals, setGoals ] = useState([]);
 
   useEffect(() => {
-    fetch('https://json-server-afv4.onrender.com')
+    fetch('http://localhost:3001/goals')
     .then((res) => res.json())
     .then(setGoals);
   }, []);

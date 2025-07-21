@@ -2,7 +2,7 @@ import React from 'react';
 
 function GoalList({ goals, setGoals }) {
   function handleDelete(id) {
-    fetch(`https://json-server-afv4.onrender.com/${id}`, {
+    fetch(`http://localhost:3001/goals/${id}`, {
       method: 'DELETE',
     }).then(() => {
       setGoals((prev) => prev.filter((g) => g.id !== id));

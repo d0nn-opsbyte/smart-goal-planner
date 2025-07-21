@@ -12,7 +12,7 @@ function DepositForm({ goals, setGoals }) {
 
     const newSavedAmount = Number(selectedGoal.savedAmount) + Number(amount);
 
-    fetch(`https://json-server-afv4.onrender.com/${goalId}`, {
+    fetch(`http://localhost:3001/goals/${goalId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ savedAmount: newSavedAmount }),
