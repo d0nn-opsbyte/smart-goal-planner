@@ -50,7 +50,7 @@ the live site allows:
 
  -vercel:[Smart-goal-planner](smart-goal-planner-qg3cvcdd6-d0nn-opsbytes-projects.vercel.app)
 
- -backend server:[](https://json-server-afv4.onrender.com)
+ -backend server:[URL](https://json-server-afv4.onrender.com)
 
  
 
